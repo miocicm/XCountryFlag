@@ -134,3 +134,5 @@ Open `countries.js` and add the exact text X displays as a new key in
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+Built with the assistance of Claude (Anthropic), including iterative debugging based on real-world testing
