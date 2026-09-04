@@ -1,0 +1,17 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Build/packaging output — don't commit built artifacts, just the source
+*.xpi
+*.zip
+web-ext-artifacts/
+
+# Logs
+*.log
+npm-debug.log*

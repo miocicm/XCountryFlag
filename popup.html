@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        width: 240px;
+        font: 13px -apple-system, system-ui, sans-serif;
+        margin: 0;
+        padding: 14px;
+        color: #0f1419;
+      }
+      h1 {
+        font-size: 14px;
+        margin: 0 0 10px;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+      }
+      button {
+        width: 100%;
+        padding: 6px 0;
+        border: 1px solid #cfd9de;
+        border-radius: 6px;
+        background: #f7f9f9;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      button:hover {
+        background: #eff3f4;
+      }
+      #status {
+        margin-top: 8px;
+        font-size: 11px;
+        color: #536471;
+        min-height: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>X Profile Country Flag</h1>
+    <label>
+      <input type="checkbox" id="enabledToggle" />
+      Show flags on profiles
+    </label>
+    <button id="clearCache">Clear cached flags</button>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "X Profile Country Flag",
+  "version": "1.0.0",
+  "description": "When you open a profile on X/Twitter, automatically reveals the 'Account based in' country (if X shows one) and puts a flag next to the person's name — no manual click on Joined needed.",
+  "author": "you",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "x-country-flag@example.local",
+      "strict_min_version": "115.0"
+    }
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://twitter.com/*",
+    "*://x.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*", "*://x.com/*"],
+      "js": ["countries.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    }
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  }
+}
